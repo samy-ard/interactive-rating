@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: 'Overpass', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+main {
+	position: relative;
+	height: 100vh;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	color: hsl(0, 0%, 100%);
+	background-color: #141519;
+}
+
+.sr-only {
+	position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.card {
+	display: block;
+	max-width: 412px;
+}
+
+.review-card {
+	display: block;
+	padding: 24px 24px 30px;
+	border-radius: 15px;
+	background-image: linear-gradient(to bottom, #262a32 0%, #171e28 80%);
+}
+
+.review-icon {
+	display: block;
+	padding: 12px;
+	margin-bottom: 24px;
+	border-radius: 100%;
+	background-color: #233038;
+}
+
+.card-title {
+	font-size: 24px;
+	line-height: 1;
+	margin-bottom: 15px;
+}
+
+.card-details {
+	font-size: 14px;
+	color: hsl(217, 12%, 63%);
+}
+
+.review-form {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.form-group {
+	display: block;
+	margin-top: 26px;
+	margin-bottom: 24px;
+}
+
+.form-group label {
+	display: block;
+	width: 41px;
+	height: 41px;
+	line-height: 1;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 100%;
+	padding: 15px 15px 11px;
+	background-color: #233038;
+	color: hsl(217, 12%, 63%);
+	transition: 0.5s all ease-in;
+}
+
+.form-group:hover label, .form-group:focus label {
+	background-color: hsl(25, 97%, 53%);
+	color: hsl(0, 0%, 100%);
+}
+
+.form-group:active label, .form-group.active label {
+	background-color: hsl(216, 12%, 54%);
+	color: hsl(0, 0%, 100%);
+}
+
+.form-control {
+	display: none;
+	opacity: 0;
+}
+
+.btn {
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	display: block;
+	font-weight: bold;
+	padding: 16px 15px;
+	border-radius: 25px;
+	letter-spacing: 4px;
+	color: hsl(0, 0%, 100%);
+	-webkit-appearance: none;
+	text-transform: uppercase;
+	background-color: hsl(25, 97%, 53%);
+	transition: 0.5s all ease-out;
+
+}
+
+.btn:hover, .btn:focus, .btn:active {
+	color: hsl(25, 97%, 53%);
+	background-color: hsl(0, 0%, 100%);
+}
+
+.thank-you-card {
+	display: block;
+	text-align: center;
+	border-radius: 15px;
+	padding: 32px 24px 38px;
+	background-image: linear-gradient(to bottom, #262a32 0%, #171e28 80%);
+}
+
+.rating-result {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1;
+	border-radius: 15px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	padding: 10px 14px 6px;
+	color: hsl(25, 97%, 53%);
+	background-color: #233038;
+}
+
+.hidden {
+	height: 0;
+	padding: 0;
+	opacity: 0;
+	display: none;
+	visibility: hidden;
+}
+
+@media screen and (min-width: 576px) {
+	.review-card {
+		padding: 30px 32px 32px;
+	}
+
+	.review-icon {
+		padding: 20px;
+		margin-bottom: 32px;
+	}
+
+	.card-title {
+		font-size: 30px;
+	}
+
+	.card-details {
+		font-size: 15px;
+	}
+
+	.form-group {
+		margin-bottom: 31px;
+	}
+
+	.form-group label {
+		width: 51px;
+		height: 51px;
+		padding: 21px 15px 18px;
+	}
+
+	.thank-you-card {
+		padding: 46px 36px 44px;
+	}
+
+}
